@@ -59,8 +59,16 @@ td{
   font-size: 1.2rem;
   border: 2px solid white;
   border-radius: 5px;
-  margin-top: 50px;
 }
 .roll:hover{
   background-color: rgb(27, 27, 27);
+}
+
+.die{
+  user-drag: none; 
+  user-select: none;
+  -moz-user-select: none;
+  -webkit-user-drag: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
 }
