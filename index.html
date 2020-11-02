@@ -12,20 +12,22 @@
     <h1>Mattzy</h1>
   </header>
   <div id="main">
-    <button class="roll">Roll the dice</button>
+    <h1></h1>
+    <button class="roll" style="display: none">Roll the dice</button>
     <div class="dice">
-      
     </div>
-    <table>
+    <form class="createPlayers">
+      <label for="amount">Amount of players</label>
+      <input value="2" id="amount" type="number" min="1" max="8">
+      <button type="submit">Create Game</button>
+    </form>
+    <table class="mainTable" style="display: none">
       <thead>
-        <tr>
+        <tr class="playHead">
           <th>options</th>
         </tr>
       </thead>
       <tbody class="playBody">
-        <tr>
-          <td></td>
-        </tr>
       </tbody>
     </table>
   </div>

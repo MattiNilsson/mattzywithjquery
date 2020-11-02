@@ -37,8 +37,9 @@ th{
 }
 td{
   padding-top: 10px;
+  padding-left: 5px;
+  padding-right: 5px;
   height: 20px;
-  text-align: center;
   border-bottom: 1px solid white;
   border-right: 1px solid white;
 }
@@ -71,4 +72,29 @@ td{
   -webkit-user-drag: none;
   -webkit-user-select: none;
   -ms-user-select: none;
+}
+
+form{
+  margin-top: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+input{
+  color: rgb(56, 56, 56);
+  width: 125px;
+  height: 40px;
+  font-size: 20px;
+  text-align: center;
+}
+
+button{
+  width: 125px;
+  height: 50px;
+  background-color: rgba(0, 0, 0, 0);
+  font-size: 1.2rem;
+  border: 2px solid white;
+  border-radius: 5px;
 }

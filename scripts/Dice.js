@@ -33,7 +33,7 @@ export default class Dice{
   rollDice(){
     const rerole = (i, real) => {
       if(!this.diceCollection[i].locked){
-        let num = Math.floor(Math.random() * 5);
+        let num = Math.floor(Math.random() * 6);
         this.diceCollection[i].nr = num + 1;
         if(!real){
           $(`.dice-${i}`).attr("src", `images/dice-six-faces-${num + 1}.svg`).css({
