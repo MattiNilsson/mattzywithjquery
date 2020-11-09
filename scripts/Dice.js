@@ -5,6 +5,20 @@ export default class Dice{
     this.diceCollection = prefabDice();
     this.createDice();
     this.start();
+    this.avalibleScores = [{
+      Aces : {avalible: false, score: 0},
+    },{
+      Twos : {avalible: false, score: 0},
+    },{
+      Threes : {avalible: false, score: 0},
+    },{
+      Fours : {avalible: false, score: 0},
+    },{
+      Fives : {avalible: false, score: 0},
+    },{
+      Sixes : {avalible: false, score: 0},
+    }, ]
+    console.log(this.avalibleScores);
   }
 
   start(){
@@ -65,5 +79,9 @@ export default class Dice{
       }, 1000 + ((i + 1) * 120))
     }
     console.log(this.diceCollection)
+  }
+
+  avalibleTableScores(){
+    
   }
 }

@@ -6,6 +6,7 @@ export default class App{
     this.types = ["Aces", "Twos", "Threes", "Fours", "Fives", "Sixes", "Bonus", "One Pair", "Two Pairs", "Three of a Kind", "Four of a Kind", "Small Straight", "Large Straight", "Full House", "Chance", "Yatzy"]
     this.createPlayers();
     this.dice = null; 
+    this.allDice = []
     this.players = [];
   }
 
@@ -31,6 +32,8 @@ export default class App{
       this.dice = new Dice();
     })
   }
+
+  
 
   createTable(){
     $(".mainTable, .roll").css({display:" block"})
